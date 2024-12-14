@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clear_system"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <RadioGroup
+        android:id="@+id/priceRangeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/range_0_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[$0 - $10]" />
+
+        <RadioButton
+            android:id="@+id/range_10_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="($10 - $20]" />
+
+        <RadioButton
+            android:id="@+id/range_20_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="($20 - $30]" />
+
+        <RadioButton
+            android:id="@+id/range_30_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="($30+]" />
+    </RadioGroup>
+
+    <!-- Other elements in the layout -->
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceRangeGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/search_books"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMsg"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:onClick="ViewAccount"
+        android:text="@string/my_account" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMsg"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="16dp"
+        android:onClick="SignOut"
+        android:text="@string/sign_out" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="ClearSystem"
+        android:text="@string/clear_system" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="EnterBooks"
+        android:text="@string/enter_books" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="ListUsers"
+        android:text="@string/list_users" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:onClick="ClearSelections"
+        android:text="Clear Selection"
+        android:translationY="-50dp" />
+</RelativeLayout>

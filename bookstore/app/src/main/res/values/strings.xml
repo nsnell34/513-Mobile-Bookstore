@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Server Connection</string>
+    <string name="home_page">Connecting to Server</string>
+    <string name="Name">Username</string>
+    <string name="Pword">Password</string>
+    <string name="LoginGet">Sign Up</string>
+    <string name="LoginPost">Sign In</string>
+    <string name="App">Login To the Bookstore</string>
+    <string name="LoginStatus">Login Status:</string>
+    <string name="Choose">Choose Method</string>
+    <string name="my_account">My Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="keywords">keywords</string>
+    <string name="search_books">Search Books</string>
+    <string name="clear_system">Clear System</string>
+    <string name="enter_books">Enter Books</string>
+    <string name="enter_book">Enter Book</string>
+    <string name="isbn">isbn</string>
+    <string name="back">back</string>
+    <string name="list_users">List Users</string>
+</resources>
